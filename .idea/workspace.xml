@@ -5,8 +5,9 @@
     <ignored path="biblioteca.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379320715398" ignored="false" />
-    <file path="/MenuTest.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379335803481" ignored="false" />
-    <file path="/Menu.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379335488227" ignored="false" />
+    <file path="/MenuTest.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379426967182" ignored="false" />
+    <file path="/Menu.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379427000759" ignored="false" />
+    <file path="/fragment.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379417901587" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,23 +22,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" line="36" class="com.twu.biblioteca.MenuTest" package="com.twu.biblioteca">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -83,21 +67,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExampleTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="24" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MenuTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="2" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+            <state line="85" column="52" selection-start="2810" selection-end="2810" vertical-scroll-proportion="1.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,20 +78,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="75" selection-start="609" selection-end="609" vertical-scroll-proportion="0.09615385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BibliotecaApp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="5" selection-start="63" selection-end="154" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="80" column="6" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,16 +115,14 @@
       <list>
         <option value="$PROJECT_DIR$/test/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="22" />
-    <option name="width" value="1420" />
-    <option name="height" value="860" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -251,34 +215,13 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RunManager" selected="JUnit.MenuTest">
-    <configuration default="false" name="ExampleTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="biblioteca" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.ExampleTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="MenuTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -301,13 +244,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="MenuTest.shouldDisplayWelcomeMessageWhenApplicationIsStarted" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="MenuTest.shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuTest" />
-      <option name="METHOD_NAME" value="shouldDisplayWelcomeMessageWhenApplicationIsStarted" />
+      <option name="METHOD_NAME" value="shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -339,13 +282,35 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="MenuTest.shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="MenuTest.shouldDisplayWelcomeMessageWhenApplicationIsStarted" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuTest" />
-      <option name="METHOD_NAME" value="shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" />
+      <option name="METHOD_NAME" value="shouldDisplayWelcomeMessageWhenApplicationIsStarted" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MenuTest.shouldNotifyCustomerIfSelectedBookIsNotAvailable" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="biblioteca" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuTest" />
+      <option name="METHOD_NAME" value="shouldNotifyCustomerIfSelectedBookIsNotAvailable" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -450,19 +415,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MenuTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldDisplayWelcomeMessageWhenApplicationIsStarted" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Menu" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MenuTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Menu" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldDisplayWelcomeMessageWhenApplicationIsStarted" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldNotifyCustomerIfSelectedBookIsNotAvailable" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.MenuTest" />
         <item index="1" class="java.lang.String" itemvalue="Application.Menu" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldNotifyCustomerIfSelectedBookIsNotAvailable" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldDisplayWelcomeMessageWhenApplicationIsStarted" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ExampleTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -480,24 +445,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="22" width="1420" height="860" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990025" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40274313" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.67027026" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24605452" sideWeight="0.75187033" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24812968" sideWeight="0.9031564" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -577,35 +542,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="2" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ExampleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="63" selection-end="154" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="75" selection-start="609" selection-end="609" vertical-scroll-proportion="0.09615385">
-          <folding />
+        <state line="80" column="6" selection-start="2808" selection-end="2808" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="52" selection-start="2810" selection-end="2810" vertical-scroll-proportion="1.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
