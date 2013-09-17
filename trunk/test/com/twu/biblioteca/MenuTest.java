@@ -29,15 +29,18 @@ public class MenuTest {
 
     @Test
     public void shouldDisplayWelcomeMessageWhenApplicationIsStarted() throws IOException {
+        setApplicationToStart();
+        assertThat(getContentLine(1), is("Welcome To The Bangalore Public Library"));
+    }
+
+    private void setApplicationToStart() throws IOException {
         Menu menu = new Menu();
         menu.start();
-        assertThat(getContentLine(1), is("Welcome To The Bangalore Public Library"));
     }
 
     @Test
     public void shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication() throws IOException {
-        Menu menu = new Menu();
-        menu.start();
+        setApplicationToStart();
         assertThat(getContentLine(3), is("1. view a list of all the books in the library " +
                 "2. reserve a book from collection " +
                 "3. check your membership details "));
@@ -83,15 +86,14 @@ public class MenuTest {
         menu.reserveBook();
     }
 
-    public String getContentLine(int num) {
-        String display[] = outContent.toString().split("\n");
-        return display[num - 1];
-    }
-
     private Menu simulateUserInputIntoConsole(String userInput) throws IOException {
         ByteArrayInputStream inContent = new ByteArrayInputStream(userInput.getBytes());
         System.setIn(inContent);
         return new Menu();
     }
 
+    public String getContentLine(int num) {
+        String display[] = outContent.toString().split("\n");
+        return display[num - 1];
+    }
 }
