@@ -45,18 +45,14 @@ public class MenuTest {
 
     @Test
     public void shouldAllowCustomerToSelectMenuOptions() throws IOException {
-        ByteArrayInputStream inContent = new ByteArrayInputStream("1".getBytes());
-        System.setIn(inContent);
-        Menu menu = new Menu();
+        Menu menu = simulateUserInputIntoConsole("1");
         menu.selectMenu();
         assertThat(getContentLine(2), is("You want to:" + menu.options.get("1")));
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void shouldNotifyCustomerIfAnInvalidMenuOptionIsSelected() throws IOException {
-        ByteArrayInputStream inContent = new ByteArrayInputStream("m".getBytes());
-        System.setIn(inContent);
-        Menu menu = new Menu();
+        Menu menu = simulateUserInputIntoConsole("m");
         menu.selectMenu();
     }
 
@@ -76,18 +72,14 @@ public class MenuTest {
 
     @Test
     public void shouldBeAbleToReserveABookForCollection() throws IOException {
-        ByteArrayInputStream inContent = new ByteArrayInputStream("Only Time Will Tell".getBytes());
-        System.setIn(inContent);
-        Menu menu = new Menu();
+        Menu menu = simulateUserInputIntoConsole("Only Time Will Tell");
         menu.reserveBook();
         assertThat(getContentLine(2), is("Thank You! Enjoy the book."));
     }
 
     @Test (expected = IllegalArgumentException.class)
     public void shouldNotifyCustomerIfSelectedBookIsNotAvailable() throws IOException {
-        ByteArrayInputStream inContent = new ByteArrayInputStream("This Book Is Not Available".getBytes());
-        System.setIn(inContent);
-        Menu menu = new Menu();
+        Menu menu = simulateUserInputIntoConsole("This Book Is Not Available");
         menu.reserveBook();
     }
 
@@ -95,4 +87,11 @@ public class MenuTest {
         String display[] = outContent.toString().split("\n");
         return display[num - 1];
     }
+
+    private Menu simulateUserInputIntoConsole(String userInput) throws IOException {
+        ByteArrayInputStream inContent = new ByteArrayInputStream(userInput.getBytes());
+        System.setIn(inContent);
+        return new Menu();
+    }
+
 }

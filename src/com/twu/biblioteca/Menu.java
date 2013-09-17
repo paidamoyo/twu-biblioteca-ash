@@ -35,10 +35,10 @@ public class Menu {
 
     public void start() {
         System.out.println(WELCOME_MESSAGE);
-        displayOptions();
+        displayMenuItems();
     }
 
-    private void displayOptions() {
+    private void displayMenuItems() {
         String menuItems = "";
         System.out.println("Main Menu:");
         for (String key : options.keySet()) {
