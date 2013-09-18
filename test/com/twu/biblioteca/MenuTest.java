@@ -13,7 +13,6 @@ import java.io.PrintStream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-
 public class MenuTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
@@ -35,7 +34,7 @@ public class MenuTest {
 
     private void setApplicationToStart() throws IOException {
         Menu menu = new Menu();
-        menu.start();
+        menu.displayMenuItems();
     }
 
     @Test
@@ -63,7 +62,7 @@ public class MenuTest {
     public void shouldViewAListOfAllBooksWhenTheViewBooksOptionIsSelected() throws IOException {
         Menu menu = new Menu();
         menu.viewBooks();
-        assertThat(getContentLine(2), is("[Only Time Will Tell]"));
+        assertThat(getContentLine(2), is("[Only Time Will Tell, Cain and Abel]"));
     }
 
     @Test
