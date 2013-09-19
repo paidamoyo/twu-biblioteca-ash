@@ -15,6 +15,7 @@ public class Menu {
     public final HashMap<String, String> options;
     private Movies movie;
     private Books books;
+    private UserAccounts userAccounts;
 
     public Menu() throws IOException {
         options = new HashMap<String, String>();
@@ -25,6 +26,7 @@ public class Menu {
         customerInput = new BufferedReader(new InputStreamReader(System.in));
         movie = new Movies();
         books = new Books();
+        userAccounts = new UserAccounts();
     }
 
     public static void main(String[] args) throws IOException {
@@ -73,9 +75,11 @@ public class Menu {
     }
 
     public void reserveBook() throws IOException {
-        System.out.println("enter the title of the book you want to reserve:");
-        String chosenBook = customerInput.readLine();
-        books.processReservation(chosenBook);
+        if (login()) {
+            System.out.println("enter the title of the book you want to reserve:");
+            String chosenBook = customerInput.readLine();
+            books.processReservation(chosenBook);
+        }
     }
 
     public void checkMembershipDetails() {
@@ -87,9 +91,22 @@ public class Menu {
         books.display();
     }
 
-    public void viewMovies() {
-        movie.display();
+    public void viewMovies() throws IOException {
+        if (login()) {
+            movie.display();
+        }
+    }
 
+    private boolean login() throws IOException {
+        System.out.println("Enter your username:");
+        String username = customerInput.readLine();
+        System.out.println("Enter your password:");
+        String password = customerInput.readLine();
+        if (userAccounts.checkLoginDetails(username, password)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 

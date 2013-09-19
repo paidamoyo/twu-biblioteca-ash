@@ -50,17 +50,9 @@ public class MenuTest extends ConsoleHelperTest {
     }
 
     @Test
-    public void shouldBeAbleToReserveABookForCollection() throws IOException {
-        simulateUserInputIntoConsole("Only Time Will Tell");
+    public void userShouldBeLoggedInForAllOperationsExceptViewingListOfBooks() throws IOException {
         Menu menu = new Menu();
-        menu.reserveBook();
-        assertThat(getContentLine(2), is("Thank You! Enjoy the book."));
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void shouldNotifyCustomerIfSelectedBookIsNotAvailable() throws IOException {
-        simulateUserInputIntoConsole("This Book Is Not Available");
-        Menu menu = new Menu();
-        menu.reserveBook();
+        menu.viewMovies();
+        assertThat(getContentLine(1),is("Enter your username:"));
     }
 }

@@ -14,4 +14,17 @@ public class BooksTest extends ConsoleHelperTest {
         books.display();
         assertThat(getContentLine(1), is("[Only Time Will Tell, Cain and Abel]"));
     }
+
+    @Test
+    public void shouldBeAbleToReserveABookForCollection() throws IOException {
+        Books books = new Books();
+        books.processReservation("Only Time Will Tell");
+        assertThat(getContentLine(1), is("Thank You! Enjoy the book."));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldNotifyCustomerIfSelectedBookIsNotAvailable() throws IOException {
+        Books books = new Books();
+        books.processReservation("This Book Is Not Available");
+    }
 }
