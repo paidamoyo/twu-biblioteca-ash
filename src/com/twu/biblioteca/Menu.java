@@ -75,11 +75,7 @@ public class Menu {
     public void reserveBook() throws IOException {
         System.out.println("enter the title of the book you want to reserve:");
         String chosenBook = customerInput.readLine();
-        if (books.bookList.contains(chosenBook)) {
-            System.out.println("Thank You! Enjoy the book.");
-        } else {
-            throw new IllegalArgumentException("Sorry we don't have that book yet");
-        }
+        books.processReservation(chosenBook);
     }
 
     public void checkMembershipDetails() {

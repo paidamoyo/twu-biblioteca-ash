@@ -15,4 +15,11 @@ public class Books {
         System.out.println(bookList);
     }
 
+    public void processReservation(String bookName) {
+        if (bookList.contains(bookName)) {
+            System.out.println("Thank You! Enjoy the book.");
+        } else {
+            throw new IllegalArgumentException("Sorry we don't have that book yet");
+        }
+    }
 }
