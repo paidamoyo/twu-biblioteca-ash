@@ -7,7 +7,7 @@ import java.io.IOException;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-public class BooksTest extends MenuTest {
+public class BooksTest extends ConsoleHelperTest {
     @Test
     public void shouldDisplayBookList() throws IOException {
         Books books = new Books();
