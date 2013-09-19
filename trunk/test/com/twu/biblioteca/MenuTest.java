@@ -45,7 +45,7 @@ public class MenuTest {
 
     @Test
     public void shouldAllowCustomerToSelectMenuOptions() throws IOException {
-        Menu menu = simulateUserInputIntoConsole("1");
+        Menu menu =simulateUserInputIntoConsole("1");
         menu.selectMenu();
         assertThat(getContentLine(2), is("You want to:" + menu.options.get("1")));
     }
@@ -57,33 +57,27 @@ public class MenuTest {
     }
 
     @Test
-    public void shouldViewAListOfAllBooksWhenTheViewBooksOptionIsSelected() throws IOException {
-        Menu menu = new Menu();
-        menu.viewBooks();
-        assertThat(getContentLine(2), is("[Only Time Will Tell, Cain and Abel]"));
-    }
-
-    @Test
     public void shouldBeAbleToCheckMembershipDetails() throws IOException {
         Menu menu = new Menu();
         menu.checkMembershipDetails();
         assertThat(getContentLine(1), is("Please talk to a Librarian. Thank you."));
     }
-
     @Test
     public void shouldBeAbleToReserveABookForCollection() throws IOException {
-        Menu menu = simulateUserInputIntoConsole("Only Time Will Tell");
+        simulateUserInputIntoConsole("Only Time Will Tell");
+       Menu menu = new Menu();
         menu.reserveBook();
         assertThat(getContentLine(2), is("Thank You! Enjoy the book."));
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void shouldNotifyCustomerIfSelectedBookIsNotAvailable() throws IOException {
-        Menu menu = simulateUserInputIntoConsole("This Book Is Not Available");
+        simulateUserInputIntoConsole("This Book Is Not Available");
+        Menu menu = new Menu();
         menu.reserveBook();
     }
 
-    private Menu simulateUserInputIntoConsole(String userInput) throws IOException {
+    public Menu simulateUserInputIntoConsole(String userInput) throws IOException {
         ByteArrayInputStream inContent = new ByteArrayInputStream(userInput.getBytes());
         System.setIn(inContent);
         return new Menu();

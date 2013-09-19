@@ -3,7 +3,6 @@ package com.twu.biblioteca;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Menu {
@@ -11,22 +10,21 @@ public class Menu {
     private static final String OPTION_VIEW_BOOK_LIST = "1. view a list of all the books in the library";
     private static final String OPTION_RESERVE_A_BOOK = "2. reserve a book from collection";
     private static final String OPTION_CHECK_MEMBERSHIP = "3. check your membership details";
-    private static final String OPTION_VIEW_MOVIE_LIST =  "4. view a list of all movies";
+    private static final String OPTION_VIEW_MOVIE_LIST = "4. view a list of all movies";
     private BufferedReader customerInput;
     public final HashMap<String, String> options;
-    private ArrayList<String> bookList;
     private Movies movie;
+    private Books books;
+
     public Menu() throws IOException {
-        bookList = new ArrayList<String>();
         options = new HashMap<String, String>();
         options.put("1", OPTION_VIEW_BOOK_LIST);
         options.put("2", OPTION_RESERVE_A_BOOK);
         options.put("3", OPTION_CHECK_MEMBERSHIP);
-        options.put("4",OPTION_VIEW_MOVIE_LIST);
-        bookList.add("Only Time Will Tell");
-        bookList.add("Cain and Abel");
+        options.put("4", OPTION_VIEW_MOVIE_LIST);
         customerInput = new BufferedReader(new InputStreamReader(System.in));
-        movie= new Movies();
+        movie = new Movies();
+        books = new Books();
     }
 
     public static void main(String[] args) throws IOException {
@@ -77,7 +75,7 @@ public class Menu {
     public void reserveBook() throws IOException {
         System.out.println("enter the title of the book you want to reserve:");
         String chosenBook = customerInput.readLine();
-        if (bookList.contains(chosenBook)) {
+        if (books.bookList.contains(chosenBook)) {
             System.out.println("Thank You! Enjoy the book.");
         } else {
             throw new IllegalArgumentException("Sorry we don't have that book yet");
@@ -90,11 +88,11 @@ public class Menu {
 
     public void viewBooks() {
         System.out.println("Below is a list of all the books in the Bangalore library:");
-        System.out.println(bookList);
+        books.display();
     }
 
     public void viewMovies() {
-       movie.display();
+        movie.display();
 
     }
 }
