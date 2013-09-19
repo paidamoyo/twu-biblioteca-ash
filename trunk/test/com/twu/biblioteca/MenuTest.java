@@ -85,13 +85,21 @@ public class MenuTest {
         menu.reserveBook();
     }
 
+    @Test
+    public void shouldBeAbleToViewMovieList() throws IOException {
+        Menu menu = new Menu () ;
+        String expectedOutput ="Sarafina!" + " " + "1992" + " " + "Darell" + " " + "Roodt" + " " + "10";
+        menu.viewMovies();
+        assertThat(getContentLine(2),is(expectedOutput )) ;
+    }
+
     private Menu simulateUserInputIntoConsole(String userInput) throws IOException {
         ByteArrayInputStream inContent = new ByteArrayInputStream(userInput.getBytes());
         System.setIn(inContent);
         return new Menu();
     }
 
-    public String getContentLine(int num) {
+    private String getContentLine(int num) {
         String display[] = outContent.toString().split("\n");
         return display[num - 1];
     }

@@ -8,22 +8,25 @@ import java.util.HashMap;
 
 public class Menu {
     private static final String WELCOME_MESSAGE = "Welcome To The Bangalore Public Library";
-    private static final String OPTION_VIEW_LIST = "1. view a list of all the books in the library";
+    private static final String OPTION_VIEW_BOOK_LIST = "1. view a list of all the books in the library";
     private static final String OPTION_RESERVE_A_BOOK = "2. reserve a book from collection";
     private static final String OPTION_CHECK_MEMBERSHIP = "3. check your membership details";
+    private static final String OPTION_VIEW_MOVIE_LIST =  "4. view a list of all movies";
     private BufferedReader customerInput;
     public final HashMap<String, String> options;
     private ArrayList<String> bookList;
-
+    private Movies movie;
     public Menu() throws IOException {
         bookList = new ArrayList<String>();
         options = new HashMap<String, String>();
-        options.put("1", OPTION_VIEW_LIST);
+        options.put("1", OPTION_VIEW_BOOK_LIST);
         options.put("2", OPTION_RESERVE_A_BOOK);
         options.put("3", OPTION_CHECK_MEMBERSHIP);
+        options.put("4",OPTION_VIEW_MOVIE_LIST);
         bookList.add("Only Time Will Tell");
         bookList.add("Cain and Abel");
         customerInput = new BufferedReader(new InputStreamReader(System.in));
+        movie= new Movies();
     }
 
     public static void main(String[] args) throws IOException {
@@ -34,12 +37,11 @@ public class Menu {
 
     public void displayMenuItems() {
         System.out.println(WELCOME_MESSAGE);
-        String menuItems = "";
         System.out.println("Main Menu:");
         for (String option : options.values()) {
-            menuItems = option + " " + menuItems;
+            System.out.println(option);
         }
-        System.out.println(menuItems);
+
     }
 
     public void selectMenu() throws IOException {
@@ -56,6 +58,7 @@ public class Menu {
         final int itemOne = 1;
         final int itemTwo = 2;
         final int itemThree = 3;
+        final int itemFour = 4;
         switch (Integer.parseInt(userInput)) {
             case itemOne:
                 viewBooks();
@@ -66,6 +69,8 @@ public class Menu {
             case itemThree:
                 checkMembershipDetails();
                 break;
+            case itemFour:
+                viewMovies();
         }
     }
 
@@ -86,6 +91,11 @@ public class Menu {
     public void viewBooks() {
         System.out.println("Below is a list of all the books in the Bangalore library:");
         System.out.println(bookList);
+    }
+
+    public void viewMovies() {
+       movie.display();
+
     }
 }
 

@@ -5,9 +5,10 @@
     <ignored path="biblioteca.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379320715398" ignored="false" />
-    <file path="/MenuTest.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379490914676" ignored="false" />
-    <file path="/Menu.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379491247756" ignored="false" />
-    <file path="/fragment.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379417901587" ignored="false" />
+    <file path="/MenuTest.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379576617210" ignored="false" />
+    <file path="/Menu.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379580211105" ignored="false" />
+    <file path="/fragment.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379576755889" ignored="false" />
+    <file path="/Movies.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379579227945" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <file leaf-file-name="MenuTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="40" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
+            <state line="90" column="47" selection-start="3000" selection-end="3000" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,10 +82,19 @@
       <file leaf-file-name="Menu.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="8" selection-start="2149" selection-end="2149" vertical-scroll-proportion="-0.33208954">
+            <state line="18" column="3" selection-start="834" selection-end="834" vertical-scroll-proportion="-1.8227612">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Movies.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Movies.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="79" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,6 +126,7 @@
         <option value="$PROJECT_DIR$/test/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Movies.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
       </list>
     </option>
@@ -221,7 +232,12 @@
     <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
-  <component name="RunManager" selected="JUnit.MenuTest">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.twu.biblioteca" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Menu">
     <configuration default="false" name="MenuTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -423,9 +439,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MenuTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldDisplayWelcomeMessageWhenApplicationIsStarted" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Menu" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Menu" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MenuTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldDisplayWelcomeMessageWhenApplicationIsStarted" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldNotifyCustomerIfSelectedBookIsNotAvailable" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" />
       </list>
@@ -461,7 +477,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35071576" sideWeight="0.70298505" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35007173" sideWeight="0.7032419" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29675812" sideWeight="0.9031564" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -542,9 +558,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Movies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="79" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="40" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
+        <state line="90" column="47" selection-start="3000" selection-end="3000" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -553,7 +576,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="8" selection-start="2149" selection-end="2149" vertical-scroll-proportion="-0.33208954">
+        <state line="18" column="3" selection-start="834" selection-end="834" vertical-scroll-proportion="-1.8227612">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
