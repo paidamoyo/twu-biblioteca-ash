@@ -40,9 +40,7 @@ public class MenuTest {
     @Test
     public void shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication() throws IOException {
         setApplicationToStart();
-        assertThat(getContentLine(3), is("1. view a list of all the books in the library " +
-                "2. reserve a book from collection " +
-                "3. check your membership details "));
+        assertThat(getContentLine(3), is("3. check your membership details"));
     }
 
     @Test
@@ -79,18 +77,10 @@ public class MenuTest {
         assertThat(getContentLine(2), is("Thank You! Enjoy the book."));
     }
 
-    @Test (expected = IllegalArgumentException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void shouldNotifyCustomerIfSelectedBookIsNotAvailable() throws IOException {
         Menu menu = simulateUserInputIntoConsole("This Book Is Not Available");
         menu.reserveBook();
-    }
-
-    @Test
-    public void shouldBeAbleToViewMovieList() throws IOException {
-        Menu menu = new Menu () ;
-        String expectedOutput ="Sarafina!" + " " + "1992" + " " + "Darell" + " " + "Roodt" + " " + "10";
-        menu.viewMovies();
-        assertThat(getContentLine(2),is(expectedOutput )) ;
     }
 
     private Menu simulateUserInputIntoConsole(String userInput) throws IOException {
@@ -99,7 +89,7 @@ public class MenuTest {
         return new Menu();
     }
 
-    private String getContentLine(int num) {
+    public String getContentLine(int num) {
         String display[] = outContent.toString().split("\n");
         return display[num - 1];
     }
