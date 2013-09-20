@@ -16,6 +16,8 @@ public class Menu {
     private Movies movie;
     private Books books;
     private UserAccounts userAccounts;
+    private String username;
+    private String password;
 
     public Menu() throws IOException {
         options = new HashMap<String, String>();
@@ -41,7 +43,6 @@ public class Menu {
         for (String option : options.values()) {
             System.out.println(option);
         }
-
     }
 
     public void selectMenu() throws IOException {
@@ -82,8 +83,8 @@ public class Menu {
         }
     }
 
-    public void checkMembershipDetails() {
-        System.out.println("Please talk to a Librarian. Thank you.");
+    public void checkMembershipDetails() throws IOException {
+        userAccounts.displayMembershipDetails(username, password);
     }
 
     public void viewBooks() {
@@ -97,16 +98,12 @@ public class Menu {
         }
     }
 
-    private boolean login() throws IOException {
+    public boolean login() throws IOException {
         System.out.println("Enter your username:");
-        String username = customerInput.readLine();
+        username = customerInput.readLine();
         System.out.println("Enter your password:");
-        String password = customerInput.readLine();
-        if (userAccounts.checkLoginDetails(username, password)) {
-            return true;
-        } else {
-            return false;
-        }
+        password = customerInput.readLine();
+        return userAccounts.checkLoginDetails(username, password);
     }
 }
 

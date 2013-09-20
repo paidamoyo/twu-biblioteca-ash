@@ -30,5 +30,4 @@ public class ConsoleHelperTest {
         String display[] = outContent.toString().split("\n");
         return display[num - 1];
     }
-
 }
