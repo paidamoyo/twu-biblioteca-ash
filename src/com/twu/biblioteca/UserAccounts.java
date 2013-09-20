@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 public class UserAccounts {
@@ -17,20 +18,15 @@ public class UserAccounts {
         usernameAndInformation.put("111-1113", "Name:Melina Phone:917 423 3888 email:tp@gmail.com");
     }
 
-    public boolean checkLoginDetails(String username, String password) {
-        if (usernameAndPassword.containsKey(username) && usernameAndPassword.containsValue(password)) {
-            return true;
-        } else {
-            return false;
-        }
+    private boolean checkLoginDetails(String username, String password) {
+        return usernameAndPassword.containsKey(username) && usernameAndPassword.containsValue(password);
     }
 
-    public void displayMembershipDetails(String username, String password) {
+    public void displayMembershipDetails(String username, String password) throws IOException {
         if (checkLoginDetails(username, password)) {
             System.out.println(usernameAndInformation.get(username));
         } else {
             System.out.println("Please talk to a Librarian. Thank you.");
         }
     }
-
 }
