@@ -11,10 +11,13 @@ public class Menu {
     private static final String OPTION_RESERVE_A_BOOK = "2. reserve a book from collection";
     private static final String OPTION_CHECK_MEMBERSHIP = "3. check your membership details";
     private static final String OPTION_VIEW_MOVIE_LIST = "4. view a list of all movies";
+    private static final String OPTION_QUIT = "5. quit ";
     private static final int VIEW_BOOK_LIST_CHOICE = 1;
     private static final int RESERVE_A_BOOK_CHOICE = 2;
     private static final int CHECK_MEMBERSHIP_CHOICE = 3;
     private static final int VIEW_MOVIE_LIST_CHOICE = 4;
+    private static final int LOGGED_OUT_CHOICE = 5;
+
     private boolean successfullyLoggedIn;
 
     private BufferedReader customerInput;
@@ -23,6 +26,7 @@ public class Menu {
     private Books books;
     private UserAccounts userAccounts;
     private String currentUser;
+    private boolean quitProgram;
 
     public Menu() throws IOException {
         options = new HashMap<String, String>();
@@ -30,6 +34,8 @@ public class Menu {
         options.put("2", OPTION_RESERVE_A_BOOK);
         options.put("3", OPTION_CHECK_MEMBERSHIP);
         options.put("4", OPTION_VIEW_MOVIE_LIST);
+        options.put("5", OPTION_QUIT);
+
         customerInput = new BufferedReader(new InputStreamReader(System.in));
         movie = new Movies();
         books = new Books();
@@ -39,7 +45,15 @@ public class Menu {
 
     public static void main(String[] args) throws IOException {
         Menu menu = new Menu();
-        menu.displayMenuItems();
+
+        while(!menu.hasQuit()) {
+            menu.displayMenuItems();
+            menu.selectMenu();
+        }
+    }
+
+    public boolean hasQuit() {
+        return quitProgram;
     }
 
     public void displayMenuItems() throws IOException {
@@ -48,7 +62,6 @@ public class Menu {
         for (String option : options.values()) {
             System.out.println(option);
         }
-        selectMenu();
     }
 
     public void selectMenu() throws IOException {
@@ -74,15 +87,20 @@ public class Menu {
                 break;
             case VIEW_MOVIE_LIST_CHOICE:
                 viewMovies();
+                break;
+            case LOGGED_OUT_CHOICE:
+                quit();
+                break;
         }
     }
 
     public void reserveBook() throws IOException {
         login();
+       if (successfullyLoggedIn){
         System.out.println("enter the title of the book you want to reserve:");
         String chosenBook = customerInput.readLine();
         books.processReservation(chosenBook);
-       displayMenuItems();
+       }
     }
 
     public void checkMembershipDetails() throws IOException {
@@ -91,20 +109,18 @@ public class Menu {
         } else {
             System.out.println("Please talk to a Librarian. Thank you.");
         }
-       displayMenuItems();
     }
 
     public void viewBooks() throws IOException {
         System.out.println("Below is a list of all the books in the Bangalore library:");
         books.display();
-        displayMenuItems();
     }
 
     public void viewMovies() throws IOException {
         login();
-        movie.display();
-        displayMenuItems();
-
+        if (successfullyLoggedIn) {
+            movie.display();
+        }
     }
 
     private void login() throws IOException {
@@ -117,13 +133,17 @@ public class Menu {
         }
     }
 
-    private void authenticate(String username, String password) throws IllegalArgumentException {
+    private void authenticate(String username, String password) throws IOException {
         if (userAccounts.checkLoginDetails(username, password)) {
             currentUser = username;
             successfullyLoggedIn = true;
         } else {
-            throw new IllegalArgumentException("should be logged in to use library resources");
+            System.out.println("should be logged in to use library resources");
         }
+    }
+
+    public void quit() {
+        quitProgram = true;
     }
 }
 
