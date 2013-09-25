@@ -23,7 +23,7 @@ public class Menu {
     private boolean successfullyLoggedIn;
 
     private BufferedReader customerInput;
-    public final HashMap<String, String> options;
+    private final HashMap<String, String> options;
     private Movies movie;
     private Books books;
     private UserAccounts userAccounts;
@@ -37,7 +37,7 @@ public class Menu {
         options.put("3", OPTION_CHECK_MEMBERSHIP);
         options.put("4", OPTION_VIEW_MOVIE_LIST);
         options.put("5", OPTION_QUIT);
-        options.put("6",OPTION_LOG_IN);
+        options.put("6", OPTION_LOG_IN);
 
         customerInput = new BufferedReader(new InputStreamReader(System.in));
         movie = new Movies();
@@ -49,7 +49,7 @@ public class Menu {
     public static void main(String[] args) throws IOException {
         Menu menu = new Menu();
 
-        while(!menu.hasQuit()) {
+        while (!menu.hasQuit()) {
             menu.displayMenuItems();
             menu.selectMenu();
         }
@@ -75,40 +75,40 @@ public class Menu {
 
     private void displayUserInputChoice(String choice) throws IOException {
         if (!options.containsKey(choice)) {
-           System.out.println(" Select a valid option!!");
-        }
-        else {System.out.println("You want to:" + options.get(choice));
-        switch (Integer.parseInt(choice)) {
-            case VIEW_BOOK_LIST_CHOICE:
-                viewBooks();
-                break;
-            case RESERVE_A_BOOK_CHOICE:
-                reserveBook();
-                break;
-            case CHECK_MEMBERSHIP_CHOICE:
-                checkMembershipDetails();
-                break;
-            case VIEW_MOVIE_LIST_CHOICE:
-                viewMovies();
-                break;
-            case LOGGED_OUT_CHOICE:
-                quit();
-                break;
-            case LOGGED_IN_CHOICE:
-                login();
-                break;
-         }
+            System.out.println(" Select a valid option!!");
+        } else {
+            System.out.println("You want to:" + options.get(choice));
+            switch (Integer.parseInt(choice)) {
+                case VIEW_BOOK_LIST_CHOICE:
+                    viewBooks();
+                    break;
+                case RESERVE_A_BOOK_CHOICE:
+                    reserveBook();
+                    break;
+                case CHECK_MEMBERSHIP_CHOICE:
+                    checkMembershipDetails();
+                    break;
+                case VIEW_MOVIE_LIST_CHOICE:
+                    viewMovies();
+                    break;
+                case LOGGED_OUT_CHOICE:
+                    quit();
+                    break;
+                case LOGGED_IN_CHOICE:
+                    login();
+                    break;
+            }
         }
     }
 
     public void reserveBook() throws IOException {
         viewBooks();
         login();
-       if (successfullyLoggedIn){
-        System.out.println("enter the title of the book you want to reserve:");
-        String chosenBook = customerInput.readLine();
-        books.processReservation(chosenBook);
-       }
+        if (successfullyLoggedIn) {
+            System.out.println("enter the title of the book you want to reserve:");
+            String chosenBook = customerInput.readLine();
+            books.processReservation(chosenBook);
+        }
     }
 
     public void checkMembershipDetails() throws IOException {
