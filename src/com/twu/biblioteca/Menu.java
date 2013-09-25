@@ -12,11 +12,13 @@ public class Menu {
     private static final String OPTION_CHECK_MEMBERSHIP = "3. check your membership details";
     private static final String OPTION_VIEW_MOVIE_LIST = "4. view a list of all movies";
     private static final String OPTION_QUIT = "5. quit ";
+    private static final String OPTION_LOG_IN = "6. log in";
     private static final int VIEW_BOOK_LIST_CHOICE = 1;
     private static final int RESERVE_A_BOOK_CHOICE = 2;
     private static final int CHECK_MEMBERSHIP_CHOICE = 3;
     private static final int VIEW_MOVIE_LIST_CHOICE = 4;
     private static final int LOGGED_OUT_CHOICE = 5;
+    private static final int LOGGED_IN_CHOICE = 6;
 
     private boolean successfullyLoggedIn;
 
@@ -35,6 +37,7 @@ public class Menu {
         options.put("3", OPTION_CHECK_MEMBERSHIP);
         options.put("4", OPTION_VIEW_MOVIE_LIST);
         options.put("5", OPTION_QUIT);
+        options.put("6",OPTION_LOG_IN);
 
         customerInput = new BufferedReader(new InputStreamReader(System.in));
         movie = new Movies();
@@ -91,10 +94,14 @@ public class Menu {
             case LOGGED_OUT_CHOICE:
                 quit();
                 break;
+            case LOGGED_IN_CHOICE:
+                login();
+                break;
         }
     }
 
     public void reserveBook() throws IOException {
+        viewBooks();
         login();
        if (successfullyLoggedIn){
         System.out.println("enter the title of the book you want to reserve:");
