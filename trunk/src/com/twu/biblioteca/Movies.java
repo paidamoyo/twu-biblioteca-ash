@@ -26,9 +26,8 @@ public class Movies {
 
     public void display() {
         System.out.println("Movie" + "   " + "Year" + "   " + "Director" + "   " + "Rating:");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
+        for (String movie : list) {
+            System.out.println(movie);
         }
-        //for (String movie : list)
     }
 }

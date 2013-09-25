@@ -48,11 +48,4 @@ public class MenuTest extends ConsoleHelperTest {
         menu.checkMembershipDetails();
         assertThat(getContentLine(1), is("Please talk to a Librarian. Thank you."));
     }
-
-    @Test
-    public void userShouldBeLoggedInForAllOperationsExceptViewingListOfBooks() throws IOException {
-        Menu menu = new Menu();
-        menu.viewMovies();
-        assertThat(getContentLine(1), is("Enter your username:"));
-    }
 }
