@@ -53,6 +53,6 @@ public class MenuTest extends ConsoleHelperTest {
     public void userShouldBeLoggedInForAllOperationsExceptViewingListOfBooks() throws IOException {
         Menu menu = new Menu();
         menu.viewMovies();
-        assertThat(getContentLine(1),is("Enter your username:"));
+        assertThat(getContentLine(1), is("Enter your username:"));
     }
 }
