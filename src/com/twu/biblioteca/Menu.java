@@ -11,6 +11,11 @@ public class Menu {
     private static final String OPTION_RESERVE_A_BOOK = "2. reserve a book from collection";
     private static final String OPTION_CHECK_MEMBERSHIP = "3. check your membership details";
     private static final String OPTION_VIEW_MOVIE_LIST = "4. view a list of all movies";
+    private static final int KEY_VIEW_BOOK_LIST = 1;
+    private static final int KEY_RESERVE_A_BOOK = 2;
+    private static final int KEY_CHECK_MEMBERSHIP = 3;
+    private static final int KEY_VIEW_MOVIE_LIST = 4;
+
     private BufferedReader customerInput;
     public final HashMap<String, String> options;
     private Movies movie;
@@ -56,21 +61,17 @@ public class Menu {
             throw new IllegalArgumentException(" Select a valid option!!");
         }
         System.out.println("You want to:" + options.get(userInput));
-        final int itemOne = 1;
-        final int itemTwo = 2;
-        final int itemThree = 3;
-        final int itemFour = 4;
         switch (Integer.parseInt(userInput)) {
-            case itemOne:
+            case KEY_VIEW_BOOK_LIST:
                 viewBooks();
                 break;
-            case itemTwo:
+            case KEY_RESERVE_A_BOOK:
                 reserveBook();
                 break;
-            case itemThree:
+            case KEY_CHECK_MEMBERSHIP:
                 checkMembershipDetails();
                 break;
-            case itemFour:
+            case KEY_VIEW_MOVIE_LIST:
                 viewMovies();
         }
     }

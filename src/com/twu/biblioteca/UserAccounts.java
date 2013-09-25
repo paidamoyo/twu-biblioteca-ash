@@ -18,7 +18,7 @@ public class UserAccounts {
         usernameAndInformation.put("111-1113", "Name:Melina Phone:917 423 3888 email:tp@gmail.com");
     }
 
-    private boolean checkLoginDetails(String username, String password) {
+    public boolean checkLoginDetails(String username, String password) {
         return usernameAndPassword.containsKey(username) && usernameAndPassword.containsValue(password);
     }
 
