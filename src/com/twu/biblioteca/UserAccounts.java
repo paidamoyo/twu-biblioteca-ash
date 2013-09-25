@@ -22,11 +22,7 @@ public class UserAccounts {
         return usernameAndPassword.containsKey(username) && usernameAndPassword.containsValue(password);
     }
 
-    public void displayMembershipDetails(String username, String password) throws IOException {
-        if (checkLoginDetails(username, password)) {
-            System.out.println(usernameAndInformation.get(username));
-        } else {
-            System.out.println("Please talk to a Librarian. Thank you.");
-        }
+    public void displayMembershipDetails(String username) throws IOException {
+        System.out.println(usernameAndInformation.get(username));
     }
 }
