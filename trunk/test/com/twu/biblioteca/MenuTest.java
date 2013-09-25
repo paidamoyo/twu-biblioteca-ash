@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 
+import static junit.framework.Assert.assertTrue;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -47,5 +48,12 @@ public class MenuTest extends ConsoleHelperTest {
         Menu menu = new Menu();
         menu.checkMembershipDetails();
         assertThat(getContentLine(1), is("Please talk to a Librarian. Thank you."));
+    }
+
+    @Test
+    public void shouldNotifyTheUserIfTheProgramIsQuit() throws IOException {
+        Menu menu = new Menu ();
+        menu.quit();
+        assertTrue(menu.hasQuit());
     }
 }
