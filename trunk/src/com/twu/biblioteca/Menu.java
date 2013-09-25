@@ -75,9 +75,9 @@ public class Menu {
 
     private void displayUserInputChoice(String choice) throws IOException {
         if (!options.containsKey(choice)) {
-            throw new IllegalArgumentException(" Select a valid option!!");
+           System.out.println(" Select a valid option!!");
         }
-        System.out.println("You want to:" + options.get(choice));
+        else {System.out.println("You want to:" + options.get(choice));
         switch (Integer.parseInt(choice)) {
             case VIEW_BOOK_LIST_CHOICE:
                 viewBooks();
@@ -97,6 +97,7 @@ public class Menu {
             case LOGGED_IN_CHOICE:
                 login();
                 break;
+         }
         }
     }
 

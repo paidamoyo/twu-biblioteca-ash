@@ -22,9 +22,10 @@ public class BooksTest extends ConsoleHelperTest {
         assertThat(getContentLine(1), is("Thank You! Enjoy the book."));
     }
 
-    @Test(expected = IllegalArgumentException.class)
-    public void shouldNotifyCustomerIfSelectedBookIsNotAvailable() throws IOException {
+    @Test
+    public void shouldNotifyCustomerIfSelectedBookIsNotAvailable()  {
         Books books = new Books();
         books.processReservation("This Book Is Not Available");
+        assertThat(getContentLine(1),is("Sorry we don't have that book yet"));
     }
 }

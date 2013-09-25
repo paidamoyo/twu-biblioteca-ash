@@ -19,7 +19,7 @@ public class Books {
         if (bookList.contains(bookName)) {
             System.out.println("Thank You! Enjoy the book.");
         } else {
-            throw new IllegalArgumentException("Sorry we don't have that book yet");
+           System.out.println("Sorry we don't have that book yet");
         }
     }
 }
