@@ -33,7 +33,7 @@ public class MenuTest extends ConsoleHelperTest {
         simulateUserInputIntoConsole("1");
         Menu menu = new Menu();
         menu.selectMenu();
-        assertThat(getContentLine(2), is("You want to:" + menu.options.get("1")));
+        assertThat(getContentLine(2), is("You want to:" + "1. view a list of all the books in the library"));
     }
 
     @Test

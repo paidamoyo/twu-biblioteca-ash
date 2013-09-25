@@ -3,7 +3,7 @@ package com.twu.biblioteca;
 import java.util.ArrayList;
 
 public class Books {
-    public ArrayList<String> bookList;
+    private ArrayList<String> bookList;
 
     public Books() {
         bookList = new ArrayList<String>();
@@ -19,7 +19,7 @@ public class Books {
         if (bookList.contains(bookName)) {
             System.out.println("Thank You! Enjoy the book.");
         } else {
-           System.out.println("Sorry we don't have that book yet");
+            System.out.println("Sorry we don't have that book yet");
         }
     }
 }
