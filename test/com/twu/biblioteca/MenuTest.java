@@ -36,11 +36,12 @@ public class MenuTest extends ConsoleHelperTest {
         assertThat(getContentLine(2), is("You want to:" + menu.options.get("1")));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void shouldNotifyCustomerIfAnInvalidMenuOptionIsSelected() throws IOException {
         simulateUserInputIntoConsole("m");
         Menu menu = new Menu();
         menu.selectMenu();
+        assertThat(getContentLine(2), is(" Select a valid option!!"));
     }
 
     @Test
@@ -52,7 +53,7 @@ public class MenuTest extends ConsoleHelperTest {
 
     @Test
     public void shouldNotifyTheUserIfTheProgramIsQuit() throws IOException {
-        Menu menu = new Menu ();
+        Menu menu = new Menu();
         menu.quit();
         assertTrue(menu.hasQuit());
     }
