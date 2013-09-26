@@ -5,29 +5,39 @@ import java.util.ArrayList;
 public class Movies {
     private ArrayList<String> list;
 
+
     public Movies() {
         list = new ArrayList<String>();
-        list.add("Sarafina!" + " " + "1992" + " " + "Darell" + " " + "Roodt" + " " + "10");
-        list.add("Avatar" + " " + "2009" + " " + "James" + " " + "Cameroon" + " " + "10");
-        list.add("Inception" + " " + "2010" + " " + "Christopher" + " " + "Nolan" + " " + "9");
-        list.add("The Hunger Games" + " " + "2012" + " " + "Gary" + " " + "Ross" + " " + "10");
-        list.add("Neria" + " " + "1993" + " " + "Godwin" + " " + "Mawuru" + " " + "8");
-        list.add("Tsosti" + " " + "2005" + " " + "Gavin" + " " + "Hood" + " " + "6");
-        list.add("Titanic" + " " + "1997" + " " + "James" + " " + "Cameroon" + " " + "10");
-        list.add("Mission Impossible" + " " + "1996" + " " + "Brian " + " " + "Palma" + " " + "5");
-        list.add("Skin" + " " + "2009" + " " + "Anthony" + " " + "Fabian" + " " + "6");
-        list.add("Yellow Card" + " " + "2000" + " " + "John" + " " + "Ribber" + " " + "7");
-        list.add("More Time" + " " + "1994" + " " + "Isaac" + " " + "Mabikwa" + " " + "7");
-        list.add("Slumdog Millionaire" + " " + "1975" + " " + "Danny" + " " + "Boyle" + " " + "6");
-        list.add("The Kite Runner" + " " + "2007" + " " + "Marc" + " " + "Foster" + " " + "7");
-        list.add("Half of a Yellow Sun" + " " + "2013" + " " + "Biyi" + " " + "Bandele" + " " + "N/A");
-        list.add("Mandela: Long Walk to Freedom" + " " + "2013" + " " + "Justin" + " " + "Chadwick" + " " + "N/A");
+        list.add("Sarafina!" + "/n" + "1992" + "/n" + "Darell Roodt" + "/n" + "10");
+        list.add("Avatar" + "/n" + "2009" + "/n" + "James Cameroon" + "/n" + "10");
+        list.add("Inception" + "/n" + "2010" + "/n" + "Christopher Nolan" + " " + "9");
+        list.add("The Hunger Games" + "/n" + "2012" + "/n" + "Gary Ross" + "/n" + "10");
+        list.add("Neria" + "/n" + "1993" + "/n" + "Godwin Mawuru" + "/n" + "8");
+        list.add("Tsosti" + "/n" + "2005" + "/n" + "Gavin Hood" + "/n" + "6");
+        list.add("Titanic" + "/n" + "1997" + "/n" + "James Cameroon" + "/n" + "10");
+        list.add("Mission Impossible" + "/n" + "1996" + "/n" + "Brian Palma" + "/n" + "5");
+        list.add("Skin" + "/n" + "2009" + "/n" + "Anthony Fabian" + "/n" + "6");
+        list.add("Yellow Card" + "/n" + "2000" + "/n" + "John Ribber" + "/n" + "7");
+        list.add("More Time" + "/n" + "1994" + "/n" + "Isaac Mabikwa" + "/n" + "7");
+        list.add("Slumdog Millionaire" + "/n" + "1975" + "/n" + "Danny Boyle" + "/n" + "6");
+        list.add("The Kite Runner" + "/n" + "2007" + "/n" + "Marc Foster" + "/n" + "7");
+        list.add("Half of a Yellow Sun" + "/n" + "2013" + "/n" + "Biyi Bandele" + "/n" + "N/A");
+        list.add("Mandela: Long Walk to Freedom" + "/n" + "2013" + "/n" + "Justin Chadwick" + "/n" + "N/A");
     }
 
     public void display() {
-        System.out.println("Movie" + "   " + "Year" + "   " + "Director" + "   " + "Rating:");
         for (String movie : list) {
-            System.out.println(movie);
+            String[] array = movie.split("/n");
+            System.out.println(addHeaders(array));
         }
+    }
+
+    private String addHeaders(String[] array) {
+        String[] headers = {"Movie:", "Year:", "Director:", "Rating:"};
+        String movie = "";
+        for (int i = 0; i < array.length; i++) {
+            movie = movie + "  " + headers[i] + array[i];
+        }
+        return movie;
     }
 }
