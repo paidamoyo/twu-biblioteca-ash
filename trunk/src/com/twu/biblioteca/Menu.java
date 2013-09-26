@@ -24,7 +24,7 @@ public class Menu {
 
     private BufferedReader customerInput;
     private final HashMap<String, String> options;
-    private Movies movie;
+    private MoviesCatalog movie;
     private Books books;
     private UserAccounts userAccounts;
     private String currentUser;
@@ -40,7 +40,7 @@ public class Menu {
         options.put("6", OPTION_LOG_IN);
 
         customerInput = new BufferedReader(new InputStreamReader(System.in));
-        movie = new Movies();
+        movie = new MoviesCatalog();
         books = new Books();
         userAccounts = new UserAccounts();
         successfullyLoggedIn = false;
