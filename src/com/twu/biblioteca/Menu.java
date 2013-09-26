@@ -17,11 +17,10 @@ public class Menu {
     private static final int RESERVE_A_BOOK_CHOICE = 2;
     private static final int CHECK_MEMBERSHIP_CHOICE = 3;
     private static final int VIEW_MOVIE_LIST_CHOICE = 4;
-    private static final int LOGGED_OUT_CHOICE = 5;
-    private static final int LOGGED_IN_CHOICE = 6;
+    private static final int LOG_OUT_CHOICE = 5;
+    private static final int LOG_IN_CHOICE = 6;
 
     private boolean successfullyLoggedIn;
-
     private BufferedReader customerInput;
     private final HashMap<String, String> options;
     private MoviesCatalog movie;
@@ -90,10 +89,10 @@ public class Menu {
                 case VIEW_MOVIE_LIST_CHOICE:
                     viewMovies();
                     break;
-                case LOGGED_OUT_CHOICE:
+                case LOG_OUT_CHOICE:
                     quit();
                     break;
-                case LOGGED_IN_CHOICE:
+                case LOG_IN_CHOICE:
                     login();
                     break;
             }
