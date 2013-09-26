@@ -11,8 +11,9 @@ public class MoviesTest extends ConsoleHelperTest {
     @Test
     public void shouldBeAbleToDisplayMovieList() throws IOException {
         Movies movies = new Movies();
-        String expectedOutput = "Sarafina!" + " " + "1992" + " " + "Darell" + " " + "Roodt" + " " + "10";
+        String expectedOutput = "  Movie:Sarafina!  Year:1992" +
+                "  Director:Darell Roodt  Rating:10";
         movies.display();
-        assertThat(getContentLine(2), is(expectedOutput));
+        assertThat(getContentLine(1), is(expectedOutput));
     }
 }

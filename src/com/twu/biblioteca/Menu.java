@@ -48,7 +48,6 @@ public class Menu {
 
     public static void main(String[] args) throws IOException {
         Menu menu = new Menu();
-
         while (!menu.hasQuit()) {
             menu.displayMenuItems();
             menu.selectMenu();
