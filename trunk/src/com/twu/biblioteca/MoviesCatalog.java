@@ -29,7 +29,7 @@ public class MoviesCatalog {
 
     public void display() {
         for (Movie movie : list) {
-           printStream.println(movie.toString());
+            printStream.println(movie.toString());
         }
     }
 }

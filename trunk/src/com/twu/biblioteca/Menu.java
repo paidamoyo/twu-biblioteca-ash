@@ -22,7 +22,6 @@ public class Menu {
     private static final int LOG_IN_CHOICE = 6;
 
     private boolean successfullyLoggedIn;
-    private BufferedReader customerInput;
     private final HashMap<String, String> options;
     private MoviesCatalog movie;
     private Books books;
@@ -30,9 +29,11 @@ public class Menu {
     private String currentUser;
     private boolean quitProgram;
     private PrintStream printStream;
+    private BufferedReader bufferedReader;
 
-    public Menu(PrintStream printStream) throws IOException {
+    public Menu(PrintStream printStream, BufferedReader bufferedReader) throws IOException {
         this.printStream = printStream;
+        this.bufferedReader = bufferedReader;
         options = new HashMap<String, String>();
         options.put("1", OPTION_VIEW_BOOK_LIST);
         options.put("2", OPTION_RESERVE_A_BOOK);
@@ -41,7 +42,6 @@ public class Menu {
         options.put("5", OPTION_QUIT);
         options.put("6", OPTION_LOG_IN);
 
-        customerInput = new BufferedReader(new InputStreamReader(System.in));
         movie = new MoviesCatalog(printStream);
         books = new Books(printStream);
         userAccounts = new UserAccounts(printStream);
@@ -50,7 +50,7 @@ public class Menu {
     }
 
     public static void main(String[] args) throws IOException {
-        Menu menu = new Menu(System.out);
+        Menu menu = new Menu(System.out, new BufferedReader(new InputStreamReader(System.in)));
         while (!menu.hasQuit()) {
             menu.displayMenuItems();
             menu.selectMenu();
@@ -71,7 +71,7 @@ public class Menu {
 
     public void selectMenu() throws IOException {
         printStream.println("enter the number of your desired option:");
-        String chosenOption = customerInput.readLine();
+        String chosenOption = bufferedReader.readLine();
         displayUserInputChoice(chosenOption);
     }
 
@@ -108,7 +108,7 @@ public class Menu {
         login();
         if (successfullyLoggedIn) {
             printStream.println("enter the title of the book you want to reserve:");
-            String chosenBook = customerInput.readLine();
+            String chosenBook = bufferedReader.readLine();
             books.processReservation(chosenBook);
         }
     }
@@ -117,7 +117,7 @@ public class Menu {
         if (successfullyLoggedIn) {
             userAccounts.displayMembershipDetails(currentUser);
         } else {
-           printStream.println("Please talk to a Librarian. Thank you.");
+            printStream.println("Please talk to a Librarian. Thank you.");
         }
     }
 
@@ -136,9 +136,9 @@ public class Menu {
     private void login() throws IOException {
         if (!successfullyLoggedIn) {
             printStream.println("Enter your username:");
-            String username = customerInput.readLine();
+            String username = bufferedReader.readLine();
             printStream.println("Enter your password:");
-            String password = customerInput.readLine();
+            String password = bufferedReader.readLine();
             authenticate(username, password);
         }
     }

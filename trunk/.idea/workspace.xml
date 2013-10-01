@@ -4,8 +4,8 @@
     <list default="true" id="0abe94e4-330b-4128-b825-12f55776fd32" name="Default" comment="" />
     <ignored path="biblioteca.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380639676189" ignored="false" />
-    <file path="/MenuTest.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380635598188" ignored="false" />
+    <file path="/Dummy.txt" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380641763789" ignored="false" />
+    <file path="/MenuTest.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380653624935" ignored="false" />
     <file path="/Menu.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380638250213" ignored="false" />
     <file path="/fragment.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380220642873" ignored="false" />
     <file path="/Movies.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380193057530" ignored="false" />
@@ -87,41 +87,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Menu.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="53" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoviesCatalogTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MoviesCatalogTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="System.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/System.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="44" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="7" selection-start="402" selection-end="457" vertical-scroll-proportion="0.0">
+            <state line="24" column="3" selection-start="1161" selection-end="1161" vertical-scroll-proportion="-3.6483517">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,49 +109,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BooksTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BooksTest.java">
+      <file leaf-file-name="MenuTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+            <state line="17" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoviesCatalog.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/MoviesCatalog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="68" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserAccountsTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/UserAccountsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="222" selection-end="222" vertical-scroll-proportion="0.1388889">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Movie.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="73" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -208,16 +141,16 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MoviesTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Movies.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleHelperTest.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Books.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/MoviesCatalog.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/BooksTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MoviesCatalogTest.java" />
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/UserAccountsTest.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" />
       </list>
     </option>
   </component>
@@ -494,22 +427,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Menu" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.Menu" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="biblioteca" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="MoviesCatalogTest.shouldBeAbleToDisplayMovieList" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -561,6 +478,28 @@
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.UserAccountsTest" />
       <option name="METHOD_NAME" value="shouldDisplayUserInformationIfLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MenuTest.shouldAllowCustomerToSelectMenuOptions" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="biblioteca" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.MenuTest" />
+      <option name="METHOD_NAME" value="shouldAllowCustomerToSelectMenuOptions" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -666,18 +605,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in biblioteca" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Menu" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MoviesCatalogTest.shouldBeAbleToDisplayMovieList" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MovieTest.shouldDisplayAMovieWithNameYearDirectorAndRating" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.shouldDisplayUserInformationIfLoggedIn" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MoviesCatalogTest.shouldBeAbleToDisplayMovieList" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MovieTest.shouldDisplayAMovieWithNameYearDirectorAndRating" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.shouldDisplayUserInformationIfLoggedIn" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldAllowCustomerToSelectMenuOptions" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in biblioteca" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.shouldDisplayUserInformationIfLoggedIn" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MovieTest.shouldDisplayAMovieWithNameYearDirectorAndRating" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MoviesCatalogTest.shouldBeAbleToDisplayMovieList" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Menu" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldAllowCustomerToSelectMenuOptions" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserAccountsTest.shouldDisplayUserInformationIfLoggedIn" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MovieTest.shouldDisplayAMovieWithNameYearDirectorAndRating" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MoviesCatalogTest.shouldBeAbleToDisplayMovieList" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -713,7 +652,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="839" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -729,7 +668,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3493544" sideWeight="0.67176634" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3493544" sideWeight="0.67176634" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32823366" sideWeight="0.9031564" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -802,23 +741,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="60" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/UserAccountsTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleHelperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -828,23 +753,16 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleHelperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/System.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
+        <state line="8" column="44" selection-start="259" selection-end="259" vertical-scroll-proportion="0.23755656">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Books.java">
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MoviesCatalogTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
+        <state line="10" column="32" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -858,9 +776,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/UserAccountsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="66" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Movie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="73" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0">
+        <state line="20" column="38" selection-start="481" selection-end="481" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="449" selection-end="449" vertical-scroll-proportion="0.42857143">
           <folding />
         </state>
       </provider>
@@ -874,25 +813,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MoviesCatalogTest.java">
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/io/BufferedReader.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="620" selection-end="620" vertical-scroll-proportion="0.0">
+        <state line="36" column="28" selection-start="1316" selection-end="1324" vertical-scroll-proportion="0.37362638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Books.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="402" selection-end="457" vertical-scroll-proportion="0.0">
+        <state line="17" column="0" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -901,24 +840,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="53" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0">
+        <state line="24" column="3" selection-start="1161" selection-end="1161" vertical-scroll-proportion="-3.6483517">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="66" selection-start="1295" selection-end="1295" vertical-scroll-proportion="0.7222222">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/UserAccountsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="222" selection-end="222" vertical-scroll-proportion="0.1388889">
-          <folding />
         </state>
       </provider>
     </entry>
