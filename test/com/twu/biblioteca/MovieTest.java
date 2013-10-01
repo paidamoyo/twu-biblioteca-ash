@@ -9,8 +9,8 @@ public class MovieTest {
 
     @Test
     public void shouldDisplayAMovieWithNameYearDirectorAndRating() {
-     Movie movie = new Movie ("Sarafina!", "1992" ,"Darell Roodt", "10");
-        assertThat (movie.toString(), is( "Movie:Sarafina! Year:1992" +
+        Movie movie = new Movie("Sarafina!", "1992", "Darell Roodt", "10");
+        assertThat(movie.toString(), is("Movie:Sarafina! Year:1992" +
                 " Director:Darell Roodt Rating:10"));
     }
 }
