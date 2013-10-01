@@ -42,7 +42,7 @@ public class Menu {
         options.put("6", OPTION_LOG_IN);
 
         customerInput = new BufferedReader(new InputStreamReader(System.in));
-        movie = new MoviesCatalog();
+        movie = new MoviesCatalog(printStream);
         books = new Books(printStream);
         userAccounts = new UserAccounts();
         successfullyLoggedIn = false;

@@ -1,11 +1,14 @@
 package com.twu.biblioteca;
 
+import java.io.PrintStream;
 import java.util.ArrayList;
 
 public class MoviesCatalog {
     private ArrayList<Movie> list;
+    private PrintStream printStream;
 
-    public MoviesCatalog() {
+    public MoviesCatalog(PrintStream printStream) {
+        this.printStream = printStream;
         list = new ArrayList<Movie>();
         list.add(new Movie("Sarafina!", "1992", "Darell Roodt", "10"));
         list.add(new Movie("Avatar", "2009", "James Cameroon", "10"));
@@ -26,7 +29,7 @@ public class MoviesCatalog {
 
     public void display() {
         for (Movie movie : list) {
-            System.out.println(movie);
+           printStream.println(movie.toString());
         }
     }
 }
