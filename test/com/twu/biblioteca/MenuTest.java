@@ -40,7 +40,6 @@ public class MenuTest  {
     @Test
     public void shouldAllowCustomerToSelectMenuOptions() throws IOException {
         when(mockBufferedReader.readLine()).thenReturn("1");
-        PrintStream mockPrintStream = mock(PrintStream.class);
         Menu menu = new Menu(mockPrintStream, mockBufferedReader);
         menu.selectMenu();
         verify(mockPrintStream).println("enter the number of your desired option:");
@@ -50,7 +49,6 @@ public class MenuTest  {
     @Test
     public void shouldNotifyCustomerIfAnInvalidMenuOptionIsSelected() throws IOException {
         when(mockBufferedReader.readLine()).thenReturn("m");
-        PrintStream mockPrintStream = mock(PrintStream.class);
         Menu menu = new Menu(mockPrintStream, mockBufferedReader);
         menu.selectMenu();
         verify(mockPrintStream).println(" Select a valid option!!");
