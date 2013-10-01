@@ -29,8 +29,10 @@ public class Menu {
     private UserAccounts userAccounts;
     private String currentUser;
     private boolean quitProgram;
+    private PrintStream printStream;
 
-    public Menu() throws IOException {
+    public Menu(PrintStream printStream) throws IOException {
+        this.printStream = printStream;
         options = new HashMap<String, String>();
         options.put("1", OPTION_VIEW_BOOK_LIST);
         options.put("2", OPTION_RESERVE_A_BOOK);
@@ -44,12 +46,13 @@ public class Menu {
         books = new Books();
         userAccounts = new UserAccounts();
         successfullyLoggedIn = false;
+
     }
 
     public static void main(String[] args) throws IOException {
-        Menu menu = new Menu();
+        Menu menu = new Menu(System.out);
         while (!menu.hasQuit()) {
-            menu.displayMenuItems();
+            menu.displayMenuItems(System.out);
             menu.selectMenu(System.out);
         }
     }
@@ -58,11 +61,11 @@ public class Menu {
         return quitProgram;
     }
 
-    public void displayMenuItems() throws IOException {
-        System.out.println(WELCOME_MESSAGE);
-        System.out.println("Main Menu:");
+    public void displayMenuItems(PrintStream out) throws IOException {
+        out.println(WELCOME_MESSAGE);
+        out.println("Main Menu:");
         for (String option : options.values()) {
-            System.out.println(option);
+            out.println(option);
         }
     }
 
@@ -114,7 +117,7 @@ public class Menu {
         if (successfullyLoggedIn) {
             userAccounts.displayMembershipDetails(currentUser);
         } else {
-            System.out.println("Please talk to a Librarian. Thank you.");
+           printStream.println("Please talk to a Librarian. Thank you.");
         }
     }
 
