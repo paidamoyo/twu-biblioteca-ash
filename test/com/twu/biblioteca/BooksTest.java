@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class BooksTest extends ConsoleHelperTest {
+public class BooksTest {
 
 
     @Test

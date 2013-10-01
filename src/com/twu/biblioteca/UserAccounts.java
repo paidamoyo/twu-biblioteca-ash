@@ -1,13 +1,16 @@
 package com.twu.biblioteca;
 
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.HashMap;
 
 public class UserAccounts {
     private HashMap<String, String> usernameAndPassword;
     private HashMap<String, String> usernameAndInformation;
+    private PrintStream printStream;
 
-    public UserAccounts() {
+    public UserAccounts(PrintStream printStream) {
+        this.printStream = printStream;
         usernameAndPassword = new HashMap<String, String>();
         usernameAndInformation = new HashMap<String, String>();
         usernameAndPassword.put("111-1111", "1");
@@ -23,6 +26,6 @@ public class UserAccounts {
     }
 
     public void displayMembershipDetails(String username) throws IOException {
-        System.out.println(usernameAndInformation.get(username));
+        printStream.println(usernameAndInformation.get(username));
     }
 }

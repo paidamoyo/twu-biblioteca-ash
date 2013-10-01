@@ -8,7 +8,7 @@ import java.io.PrintStream;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
-public class MoviesCatalogTest extends ConsoleHelperTest {
+public class MoviesCatalogTest {
     @Test
     public void shouldBeAbleToDisplayMovieList() throws IOException {
         PrintStream mockPrintStream = mock(PrintStream.class);
