@@ -43,7 +43,7 @@ public class Menu {
 
         customerInput = new BufferedReader(new InputStreamReader(System.in));
         movie = new MoviesCatalog();
-        books = new Books();
+        books = new Books(printStream);
         userAccounts = new UserAccounts();
         successfullyLoggedIn = false;
 
@@ -52,8 +52,8 @@ public class Menu {
     public static void main(String[] args) throws IOException {
         Menu menu = new Menu(System.out);
         while (!menu.hasQuit()) {
-            menu.displayMenuItems(System.out);
-            menu.selectMenu(System.out);
+            menu.displayMenuItems();
+            menu.selectMenu();
         }
     }
 
@@ -61,21 +61,21 @@ public class Menu {
         return quitProgram;
     }
 
-    public void displayMenuItems(PrintStream out) throws IOException {
-        out.println(WELCOME_MESSAGE);
-        out.println("Main Menu:");
+    public void displayMenuItems() throws IOException {
+        printStream.println(WELCOME_MESSAGE);
+        printStream.println("Main Menu:");
         for (String option : options.values()) {
-            out.println(option);
+            printStream.println(option);
         }
     }
 
-    public void selectMenu(PrintStream printStream) throws IOException {
+    public void selectMenu() throws IOException {
         printStream.println("enter the number of your desired option:");
         String chosenOption = customerInput.readLine();
-        displayUserInputChoice(chosenOption, printStream);
+        displayUserInputChoice(chosenOption);
     }
 
-    private void displayUserInputChoice(String choice, PrintStream printStream) throws IOException {
+    private void displayUserInputChoice(String choice) throws IOException {
         if (!options.containsKey(choice)) {
             printStream.println(" Select a valid option!!");
         } else {

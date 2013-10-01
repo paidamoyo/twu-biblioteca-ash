@@ -3,29 +3,35 @@ package com.twu.biblioteca;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.PrintStream;
 
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 public class BooksTest extends ConsoleHelperTest {
+
+
     @Test
     public void shouldDisplayBookList() throws IOException {
-        Books books = new Books();
+        PrintStream mockPrintStream = mock(PrintStream.class);
+        Books books = new Books(mockPrintStream);
         books.display();
-        assertThat(getContentLine(1), is("[Only Time Will Tell, Cain and Abel]"));
+        verify(mockPrintStream).println("[Only Time Will Tell, Cain and Abel]");
     }
 
     @Test
     public void shouldBeAbleToReserveABookForCollection() throws IOException {
-        Books books = new Books();
+        PrintStream mockPrintStream = mock(PrintStream.class);
+        Books books = new Books(mockPrintStream);
         books.processReservation("Only Time Will Tell");
-        assertThat(getContentLine(1), is("Thank You! Enjoy the book."));
+        verify(mockPrintStream).println("Thank You! Enjoy the book.");
     }
 
     @Test
     public void shouldNotifyCustomerIfSelectedBookIsNotAvailable() {
-        Books books = new Books();
+        PrintStream mockPrintStream = mock(PrintStream.class);
+        Books books = new Books(mockPrintStream);
         books.processReservation("This Book Is Not Available");
-        assertThat(getContentLine(1), is("Sorry we don't have that book yet"));
+        verify(mockPrintStream).println("Sorry we don't have that book yet");
     }
 }
