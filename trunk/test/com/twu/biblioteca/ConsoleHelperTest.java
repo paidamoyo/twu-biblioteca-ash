@@ -10,15 +10,17 @@ import java.io.PrintStream;
 
 public class ConsoleHelperTest {
     public final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private PrintStream originalOut;
 
     @Before
     public void setUpStreams() {
+        originalOut = System.out;
         System.setOut(new PrintStream(outContent));
     }
 
     @After
     public void cleanUpStreams() {
-        System.setOut(null);
+        System.setOut(originalOut);
     }
 
     public void simulateUserInputIntoConsole(String userInput) throws IOException {

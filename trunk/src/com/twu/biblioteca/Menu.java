@@ -3,6 +3,7 @@ package com.twu.biblioteca;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.util.HashMap;
 
 public class Menu {
@@ -49,7 +50,7 @@ public class Menu {
         Menu menu = new Menu();
         while (!menu.hasQuit()) {
             menu.displayMenuItems();
-            menu.selectMenu();
+            menu.selectMenu(System.out);
         }
     }
 
@@ -65,17 +66,17 @@ public class Menu {
         }
     }
 
-    public void selectMenu() throws IOException {
+    public void selectMenu(PrintStream printStream) throws IOException {
         System.out.println("enter the number of your desired option:");
         String chosenOption = customerInput.readLine();
-        displayUserInputChoice(chosenOption);
+        displayUserInputChoice(chosenOption, printStream);
     }
 
-    private void displayUserInputChoice(String choice) throws IOException {
+    private void displayUserInputChoice(String choice, PrintStream printStream) throws IOException {
         if (!options.containsKey(choice)) {
-            System.out.println(" Select a valid option!!");
+            printStream.println(" Select a valid option!!");
         } else {
-            System.out.println("You want to:" + options.get(choice));
+            printStream.println("You want to:" + options.get(choice));
             switch (Integer.parseInt(choice)) {
                 case VIEW_BOOK_LIST_CHOICE:
                     viewBooks();

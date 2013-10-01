@@ -4,10 +4,13 @@ package com.twu.biblioteca;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.PrintStream;
 
 import static junit.framework.Assert.assertTrue;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 public class MenuTest extends ConsoleHelperTest {
 
@@ -31,16 +34,17 @@ public class MenuTest extends ConsoleHelperTest {
     @Test
     public void shouldAllowCustomerToSelectMenuOptions() throws IOException {
         simulateUserInputIntoConsole("1");
+        PrintStream mockPrintStream = mock(PrintStream.class);
         Menu menu = new Menu();
-        menu.selectMenu();
-        assertThat(getContentLine(2), is("You want to:" + "1. view a list of all the books in the library"));
+        menu.selectMenu(mockPrintStream);
+        verify(mockPrintStream).println("You want to:1. view a list of all the books in the library");
     }
 
     @Test
     public void shouldNotifyCustomerIfAnInvalidMenuOptionIsSelected() throws IOException {
         simulateUserInputIntoConsole("m");
         Menu menu = new Menu();
-        menu.selectMenu();
+        menu.selectMenu(System.out);
         assertThat(getContentLine(2), is(" Select a valid option!!"));
     }
 

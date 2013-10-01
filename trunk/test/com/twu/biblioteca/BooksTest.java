@@ -23,9 +23,9 @@ public class BooksTest extends ConsoleHelperTest {
     }
 
     @Test
-    public void shouldNotifyCustomerIfSelectedBookIsNotAvailable()  {
+    public void shouldNotifyCustomerIfSelectedBookIsNotAvailable() {
         Books books = new Books();
         books.processReservation("This Book Is Not Available");
-        assertThat(getContentLine(1),is("Sorry we don't have that book yet"));
+        assertThat(getContentLine(1), is("Sorry we don't have that book yet"));
     }
 }
