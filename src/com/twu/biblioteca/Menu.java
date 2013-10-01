@@ -70,7 +70,7 @@ public class Menu {
     }
 
     public void selectMenu(PrintStream printStream) throws IOException {
-        System.out.println("enter the number of your desired option:");
+        printStream.println("enter the number of your desired option:");
         String chosenOption = customerInput.readLine();
         displayUserInputChoice(chosenOption, printStream);
     }
@@ -107,7 +107,7 @@ public class Menu {
         viewBooks();
         login();
         if (successfullyLoggedIn) {
-            System.out.println("enter the title of the book you want to reserve:");
+            printStream.println("enter the title of the book you want to reserve:");
             String chosenBook = customerInput.readLine();
             books.processReservation(chosenBook);
         }
@@ -122,7 +122,7 @@ public class Menu {
     }
 
     public void viewBooks() throws IOException {
-        System.out.println("Below is a list of all the books in the Bangalore library:");
+        printStream.println("Below is a list of all the books in the Bangalore library:");
         books.display();
     }
 
@@ -135,9 +135,9 @@ public class Menu {
 
     private void login() throws IOException {
         if (!successfullyLoggedIn) {
-            System.out.println("Enter your username:");
+            printStream.println("Enter your username:");
             String username = customerInput.readLine();
-            System.out.println("Enter your password:");
+            printStream.println("Enter your password:");
             String password = customerInput.readLine();
             authenticate(username, password);
         }
@@ -148,7 +148,7 @@ public class Menu {
             currentUser = username;
             successfullyLoggedIn = true;
         } else {
-            System.out.println("should be logged in to use library resources");
+            printStream.println("should be logged in to use library resources");
         }
     }
 

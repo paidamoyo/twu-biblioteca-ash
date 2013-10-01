@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380633958524" ignored="false" />
     <file path="/MenuTest.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380634247044" ignored="false" />
-    <file path="/Menu.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380634330069" ignored="false" />
+    <file path="/Menu.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380634905767" ignored="false" />
     <file path="/fragment.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380220642873" ignored="false" />
     <file path="/Movies.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1380193057530" ignored="false" />
     <file path="/MoviesTest.java" changelist="0abe94e4-330b-4128-b825-12f55776fd32" time="1379591994148" ignored="false" />
@@ -86,10 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Menu.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="63" selection-start="4423" selection-end="4423" vertical-scroll-proportion="0.0">
+            <state line="54" column="8" selection-start="2263" selection-end="2263" vertical-scroll-proportion="0.7916667">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MenuTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="25" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.9212963">
+            <state line="49" column="53" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -172,7 +172,7 @@
       <file leaf-file-name="ConsoleHelperTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleHelperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+            <state line="17" column="8" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -206,8 +206,8 @@
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/MoviesCatalog.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MoviesCatalogTest.java" />
-        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleHelperTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleHelperTest.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java" />
       </list>
     </option>
@@ -653,8 +653,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in biblioteca" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldBeAbleToCheckMembershipDetails" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldNotifyCustomerIfAnInvalidMenuOptionIsSelected" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldNotifyCustomerIfAnInvalidMenuOptionIsSelected" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldBeAbleToCheckMembershipDetails" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldDisplayWelcomeMessageWhenApplicationIsStarted" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.MenuTest.shouldSeeAListOfMenuOptionsAtTheStartOfTheApplication" />
       </list>
@@ -692,7 +692,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="839" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -816,30 +816,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BooksTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Books.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="60" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -865,6 +844,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/BooksTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/System.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="44" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
@@ -872,26 +865,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/UserAccounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="60" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/ConsoleHelperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+        <state line="17" column="8" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="53" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="63" selection-start="4423" selection-end="4423" vertical-scroll-proportion="0.0">
+        <state line="54" column="8" selection-start="2263" selection-end="2263" vertical-scroll-proportion="0.7916667">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="25" selection-start="2166" selection-end="2166" vertical-scroll-proportion="0.9212963">
-          <folding />
         </state>
       </provider>
     </entry>
