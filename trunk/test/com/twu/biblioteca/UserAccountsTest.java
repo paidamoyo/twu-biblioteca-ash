@@ -3,16 +3,18 @@ package com.twu.biblioteca;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.PrintStream;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
-public class UserAccountsTest extends ConsoleHelperTest {
+public class UserAccountsTest {
 
     @Test
     public void shouldDisplayUserInformationIfLoggedIn() throws IOException {
-        UserAccounts userAccounts = new UserAccounts();
+        PrintStream mockPrintStream = mock(PrintStream.class);
+        UserAccounts userAccounts = new UserAccounts(mockPrintStream);
         userAccounts.displayMembershipDetails("111-1111");
-        assertThat(getContentLine(1), is("Name:Ash Phone:919 423 3888 email:tt@gmail.com"));
+        verify(mockPrintStream).println("Name:Ash Phone:919 423 3888 email:tt@gmail.com");
     }
 }

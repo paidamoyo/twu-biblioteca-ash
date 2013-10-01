@@ -44,7 +44,7 @@ public class Menu {
         customerInput = new BufferedReader(new InputStreamReader(System.in));
         movie = new MoviesCatalog(printStream);
         books = new Books(printStream);
-        userAccounts = new UserAccounts();
+        userAccounts = new UserAccounts(printStream);
         successfullyLoggedIn = false;
 
     }
